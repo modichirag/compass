@@ -14,12 +14,17 @@ layout: base
         {% endif %}
 
         {% if site.compass.tagline %}
-        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
+        <div class="tagline-container"><p>
+	    <!-- {{ site.compass.tagline }} -->
+	    Email : modichirag[at]berkeley.edu
+	    <br>
+	    <nobr>Github : <a href="https://github.com/modichirag" > modichirag </nobr></a>
+	</p></div>
         {% endif %}
     </header>
-    <main>
+    <main  class="content">
       {% if site.compass.include_content %}
-      <div class="content">
+      <div>
         {% include content.html %}
       </div>
       {% endif %}
